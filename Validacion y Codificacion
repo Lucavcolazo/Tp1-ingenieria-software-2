@@ -1,0 +1,35 @@
+Validación de los atributos en la pantalla
+Partes que componen nuestra pantalla:
+1.	Código de producto
+2.	Nombre de producto
+3.	Descripción de producto
+4.	Stock inicial
+5.	Punto de pedido
+6.	Fecha de compra
+7.	Código de proveedor
+8.	Precio de compra
+	
+Validación.
+ATRIBUTO / VALIDACION	/ JUSTIFICACION
+Código de producto. / Longitud máxima de 50 caracteres, formato alfanumérico. / Limita la longitud para evitar errores de entrada y asegura que el formato sea consistente para facilitar la identificación del producto.
+Nombre de producto. / Longitud máxima de 100 caracteres, formato alfanumérico y algunos caracteres.	/ Evita la inserción de nombres excesivamente largos que podrían desbordar el diseño de la pantalla.
+Descripción de producto. / Longitud máxima de 600 caracteres, se permiten caracteres alfanuméricos y especiales.	/ Similar al nombre del producto, pero con una longitud máxima posiblemente más larga para permitir descripciones detalladas.
+Stock inicial. / Valor numérico INT.	/ INT para evitar valores negativos o decimales.
+Punto de pedido. / Valor numérico INT.	/ INT para evitar valores negativos o decimales.
+Fecha de compra. / Formato fecha (DD/MM/AAAA).	/ Garantiza que la fecha ingresada tenga coherencia y pueda ser procesada por el sistema.
+Código de proveedor. / Longitud máxima de 20 caracteres, formato alfanumérico.	/ Limita la longitud para evitar errores de entrada y asegura que el formato sea consistente.
+Precio de compra. / Valor numérico que contenga dos decimales. / Garantiza que el precio ingresado sea un valor válido y evita valores negativos o decimales incorrectos.
+
+
+Codificación: 
+Para aplicar la codificación a los productos elegimos el método “Nemotécnicos”, se basa en crear una clave única que está compuesta de las iniciales de lo que pertenece cada cosa.
+
+Nombre / Producto	/ Talle	/ Color	/ Código	/ Nombre Código
+Camisa hombre / M	/ Blanco	/ CHMB	/ C = Producto; H = Genero; M = Talle; Color = B
+Camisa hombre / L	/ Beige	/ CHLB	/ C = Producto; H = Genero; L = Talle; Color = B
+Remera hombre	/ S	/ Azul	/ RHSA	/ R = Producto; H = Genero; S = Talle; Color = A
+Pantalón hombre	/ 38	/ Gris	/ PH38G	/ P = Producto; H = Genero; 38 = Talle; Color = G
+
+
+
+
